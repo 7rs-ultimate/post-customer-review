@@ -1,6 +1,11 @@
 {
     "name": "7rs-ultimate/post-customer-review",
     "description": "7RS Ultimate PostCustomerReview",
+    "keywords": [
+        "7RS",
+        "7Interactive"
+    ],
+    "homepage": "https://7rs.cz",
     "type": "library",
     "license": "CC-BY-4.0",
     "authors": [
@@ -9,6 +14,8 @@
             "email": "info@7interactive.cz"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {}
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.1"
+    }
 }
