@@ -1,0 +1,15 @@
+{extends "../../../../../../../app/AdminModule/Presenters/templates/@layout.latte"}
+
+{block headline}
+<h1 class="h3 mb-0 text-gray-800">Klientské recenze</h1>
+{/block}
+
+{block headlineButtons}
+<a n:href="PostCustomerReview:form" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><i
+    class="fas fa-plus fa-sm text-white-50"></i> Přidat recenzi</a>
+{/block}
+
+{block content}
+<div class="card shadow grid">
+  {control listGrid}
+</div>

@@ -1,0 +1,32 @@
+<div id="rikaji-o-nas"></div>
+
+<section n:if="count($items) > 0" class="section parallax-container context-dark decor-text" data-parallax-img="images/bg-image-6.jpg">
+  <div class="parallax-content">
+    <div class="container section-lg text-center">
+      <h4 class="heading-decorated">{_"Co o nás říkají naši zákazníci"}</h4>
+      <!-- Owl Carousel-->
+      <div class="owl-carousel" data-items="1" data-stage-padding="15" data-loop="true" data-margin="30"
+        data-dots="true" data-nav="false" data-autoplay="false">
+        <div class="item" n:foreach="$items as $item">
+          {var $postDataArray = $item->getPostDataArray()}
+          <!-- Quote default-->
+          <div class="quote-default">
+            <div class="quote-default__image">
+              <img
+                n:if="isset($postDataArray['image_1']) && isset($postDataArray['image_1']['full']) && isset($postDataArray['image_1']['full']['path'])"
+                class="lozad" data-src="{$postDataArray['image_1']['full']['path']}" alt="" width="120" height="120" />
+            </div>
+            <div class="quote-default__text">
+                {$postDataArray['text_1']|noescape}
+            </div>
+            <p class="quote-default__cite">
+              {$postDataArray['customer_name']}
+              <br />
+              <span class="font-italic">{$postDataArray['customer_job']}</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

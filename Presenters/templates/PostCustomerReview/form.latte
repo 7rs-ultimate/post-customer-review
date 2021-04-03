@@ -1,0 +1,17 @@
+{extends "../../../../../../../app/AdminModule/Presenters/templates/@layout.latte"}
+
+{block headline}
+<h1 n:if="$post" class="h3 mb-0 text-gray-800">Úprava recenze</h1>
+<h1 n:if="!$post" class="h3 mb-0 text-gray-800">Přidání nové recenze</h1>
+{/block}
+
+{block #content}
+<div class="row">
+  <div class="col-12 col-lg-6">
+    <div class="card shadow p-4">
+      <div class="form-group">
+        {control postForm}
+      </div>
+    </div>
+  </div>
+</div>
