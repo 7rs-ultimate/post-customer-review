@@ -1,0 +1,14 @@
+{
+    "name": "7rs-ultimate/post-customer-review",
+    "description": "7RS Ultimate PostCustomerReview",
+    "type": "library",
+    "license": "cc",
+    "authors": [
+        {
+            "name": "7 Interactive, s.r.o.",
+            "email": "info@7interactive.cz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
